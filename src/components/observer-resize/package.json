@@ -1,0 +1,26 @@
+{
+  "name": "observer-resize",
+  "version": "1.0.0",
+  "description": "监听元素宽高变化",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git"
+  },
+  "keywords": [
+    "resize",
+    "observer",
+    "polyfill",
+    "vue",
+    "width",
+    "height"
+  ],
+  "author": "yaodao",
+  "license": "ISC"
+}

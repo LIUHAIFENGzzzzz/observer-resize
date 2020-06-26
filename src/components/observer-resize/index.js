@@ -2,8 +2,8 @@ import ResizeObserver from "resize-observer-polyfill";
 
 const EVENTNAME = "resize";
 
-const VueResizeObserver = {
-  name: "ResizeObserver",
+const VueObserverResize = {
+  name: "ObserverResize",
   props: {
     disabled: Boolean
   },
@@ -78,7 +78,7 @@ const VueResizeObserver = {
 
 export default {
   install: Vue => {
-    Vue.component(VueResizeObserver.name, VueResizeObserver);
+    Vue.component(VueObserverResize.name, VueObserverResize);
 
     Vue.directive(EVENTNAME, {
       bind: (element, binding, vnode) => {
@@ -105,4 +105,4 @@ export default {
   }
 };
 
-export { VueResizeObserver };
+export { VueObserverResize };

@@ -1,7 +1,13 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+
+      <h3>啊啊啊啊啊啊啊啊啊啊啊啊</h3>
+    <observer-resize @resize="resize">
+      <h3>啊啊啊啊啊啊啊啊啊啊啊啊</h3>
+    </observer-resize>
+
+    <HelloWorld   />
   </div>
 </template>
 
@@ -12,7 +18,12 @@ import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "Home",
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
+  methods: {
+    resize(size) {
+      console.log(size);
+    },
+  },
 };
 </script>

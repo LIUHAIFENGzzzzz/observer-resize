@@ -1,4 +1,4 @@
-# demo
+# observer-resize
 
 ## Project setup
 ```

@@ -5,14 +5,14 @@ const EVENTNAME = "resize";
 const VueResizeObserver = {
   name: "ResizeObserver",
   props: {
-    disabled: Boolean,
+    disabled: Boolean
   },
   data() {
     this.currentElement = null;
     this.resizeObserver = null;
     return {
       width: 0,
-      height: 0,
+      height: 0
     };
   },
 
@@ -68,16 +68,16 @@ const VueResizeObserver = {
         this.resizeObserver.disconnect();
         this.resizeObserver = null;
       }
-    },
+    }
   },
 
   render() {
     return this.$slots.default[0];
-  },
+  }
 };
 
 export default {
-  install: (Vue) => {
+  install: Vue => {
     Vue.component(VueResizeObserver.name, VueResizeObserver);
 
     Vue.directive(EVENTNAME, {
@@ -100,9 +100,9 @@ export default {
           vnode.context.resizeObserver.disconnect();
           vnode.context.resizeObserver = null;
         }
-      },
+      }
     });
-  },
+  }
 };
 
 export { VueResizeObserver };

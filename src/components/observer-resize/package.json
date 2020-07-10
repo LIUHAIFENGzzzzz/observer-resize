@@ -1,7 +1,7 @@
 {
   "name": "observer-resize",
-  "version": "1.0.0",
-  "description": "监听元素宽高变化",
+  "version": "1.0.2",
+  "description": "监听元素宽高变化事件",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://git"
+    "url": "https://github.com/LIUHAIFENGzzzzz/observer-resize"
   },
   "keywords": [
     "resize",
